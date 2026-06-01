@@ -34,8 +34,14 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true }, { status: 201 });
-  } catch (err) {
+  } catch (err: any) {
     console.error('[API Register]', err);
-    return NextResponse.json({ error: 'Erro interno. Tente novamente.' }, { status: 500 });
+    if (err?.code === 'P2021') {
+      return NextResponse.json({ error: 'Banco de dados ainda não está preparado. Verifique as tabelas no Supabase.' }, { status: 500 });
+    }
+    if (err?.code === 'P1001' || err?.code === 'P1000') {
+      return NextResponse.json({ error: 'Não foi possível conectar ao banco de dados. Verifique a DATABASE_URL na Vercel.' }, { status: 500 });
+    }
+    return NextResponse.json({ error: 'Erro interno. Verifique os logs da Vercel.' }, { status: 500 });
   }
 }
