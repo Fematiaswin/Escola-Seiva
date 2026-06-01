@@ -49,7 +49,7 @@ Acesse: http://localhost:3000
 
 | Perfil | E-mail                        | Senha      |
 |--------|-------------------------------|------------|
-| Admin  | admin@igrejaseiva.com.br      | admin123   |
+| Admin  | admin@escolaseiva.com.br      | admin123   |
 | Aluno  | aluno@demo.com                | aluno123   |
 
 > ⚠️ Altere as senhas antes de ir para produção!

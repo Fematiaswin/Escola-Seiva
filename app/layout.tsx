@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ['cursos online', 'escola seiva', 'formação cristã', 'EAD', 'discipulado'],
   authors: [{ name: 'Escola Seiva' }],
   creator: 'Escola Seiva',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://escola.igrejaseiva.com.br'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://escolaseiva.com.br'),
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
