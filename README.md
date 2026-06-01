@@ -1,6 +1,6 @@
 # 🌱 Escola Seiva — Plataforma LMS
 
-Plataforma de cursos online da Igreja Seiva. Desenvolvida com Next.js 14, Prisma, NextAuth e integração com Asaas para pagamentos.
+Plataforma de cursos online para formação cristã. Desenvolvida com Next.js 14, Prisma, NextAuth e integração com Asaas para pagamentos.
 
 ---
 

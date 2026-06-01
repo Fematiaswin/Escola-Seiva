@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Escola Seiva — Conhecimento que Cria Raízes',
-  description: 'Plataforma de formação da Igreja Seiva. Cursos online com área exclusiva para alunos, certificados e muito mais.',
+  description: 'Plataforma de formação cristã. Cursos online com área exclusiva para alunos, certificados e muito mais.',
 };
 
 async function getPublishedCourses() {
@@ -316,7 +316,7 @@ export default async function Home() {
             </span>
           </div>
           <p style={{ fontSize: '0.875rem', marginBottom: '0.75rem' }}>
-            Plataforma de formação da Igreja Seiva
+            Plataforma de formação cristã.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', fontSize: '0.875rem' }}>
             <Link href="/cursos" style={{ color: 'rgba(254,250,224,0.65)', textDecoration: 'none' }}>Cursos</Link>
@@ -324,7 +324,7 @@ export default async function Home() {
             <Link href="/login" style={{ color: 'rgba(254,250,224,0.65)', textDecoration: 'none' }}>Login</Link>
           </div>
           <p style={{ fontSize: '0.8125rem', marginTop: '1.5rem', opacity: 0.45 }}>
-            © {new Date().getFullYear()} Igreja Seiva. Todos os direitos reservados.
+            © {new Date().getFullYear()} Escola Seiva. Todos os direitos reservados.
           </p>
         </div>
       </footer>

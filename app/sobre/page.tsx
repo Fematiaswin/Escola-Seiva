@@ -32,7 +32,7 @@ export default function Sobre() {
                 Nossa missão
               </h2>
               <p style={{ color: '#4b5563', lineHeight: 1.8, fontSize: '1.0625rem', marginBottom: '1.25rem' }}>
-                A Escola Seiva é a plataforma de formação da Igreja Seiva. Nascemos do desejo de conectar
+                A Escola Seiva é uma plataforma de formação cristã. Nascemos do desejo de conectar
                 pessoas à fonte da vida — Jesus — por meio do ensino bíblico, da formação cristã e do
                 desenvolvimento de lideranças.
               </p>
