@@ -7,7 +7,7 @@ async function main() {
   console.log('🌱 Iniciando seed...');
 
   // Admin
-  const adminHash = await bcrypt.hash('admin123', 12);
+  const adminHash = await bcrypt.hash('Seiva1409', 12);
   const admin = await prisma.user.upsert({
     where: { email: 'admin@escolaseiva.com.br' },
     update: {},
@@ -159,7 +159,7 @@ async function main() {
 
   console.log('✅ Cursos e dados de exemplo criados.');
   console.log('\n📋 Credenciais de acesso:');
-  console.log('   Admin  → admin@escolaseiva.com.br  / admin123');
+  console.log('   Admin  → admin@escolaseiva.com.br  / Seiva1409');
   console.log('   Aluno  → aluno@demo.com            / aluno123');
   console.log('\n🎉 Seed concluído!');
 }
