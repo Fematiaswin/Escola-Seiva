@@ -5,7 +5,7 @@
 /* ================================================
    ESCOLA SEIVA — Design System
    Brandbook: #283618 / #606c38 / #FEFAE0
-   Tipografia: Poppins (corpo) + serif display
+   Tipografia: Cadia (destaque) + Poppins (apoio)
    ================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
@@ -18,6 +18,9 @@
   --seiva-light:  #dde5b6;
   --seiva-muted:  #a3b18a;
   --seiva-ink:    #1a2310;
+
+  --font-display: 'Cadia', Georgia, 'Times New Roman', serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
 
   --radius-sm:  0.5rem;
   --radius-md:  0.75rem;
@@ -43,7 +46,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--seiva-cream);
   color: var(--seiva-ink);
   line-height: 1.6;
@@ -68,9 +71,22 @@ body {
 
 /* ——— Tipografia ——— */
 .font-display {
-  font-family: Georgia, 'Playfair Display', serif;
+  font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+}
+
+.brand-wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.brand-mark {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ——— Buttons ——— */

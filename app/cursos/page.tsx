@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header';
+﻿import { Header } from '@/components/Header';
 import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
 import { BookOpen, Users, PlayCircle, Search } from 'lucide-react';
@@ -37,7 +37,7 @@ export default async function CursosPage() {
         }}>
           <div className="container" style={{ textAlign: 'center' }}>
             <h1 style={{
-              fontFamily: 'Georgia, serif', fontSize: 'clamp(1.75rem,4vw,2.5rem)',
+              fontFamily: 'var(--font-display)', fontSize: 'clamp(1.75rem,4vw,2.5rem)',
               fontWeight: 700, color: 'var(--seiva-cream)', marginBottom: '0.75rem',
             }}>
               Todos os cursos
@@ -96,7 +96,7 @@ export default async function CursosPage() {
                     {/* Content */}
                     <div style={{ padding: '1.25rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
                       <h3 style={{
-                        fontFamily: 'Georgia, serif', fontSize: '1.125rem', fontWeight: 700,
+                        fontFamily: 'var(--font-display)', fontSize: '1.125rem', fontWeight: 700,
                         color: 'var(--seiva-dark)', marginBottom: '0.5rem', lineHeight: 1.3,
                       }}>
                         {course.title}

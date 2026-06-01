@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header';
+﻿import { Header } from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function Sobre() {
           padding: '4rem 0 3.5rem', textAlign: 'center',
         }}>
           <div className="container">
-            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2rem,4vw,2.75rem)', fontWeight: 700, color: 'var(--seiva-cream)' }}>
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem,4vw,2.75rem)', fontWeight: 700, color: 'var(--seiva-cream)' }}>
               Sobre a Escola Seiva
             </h1>
             <p style={{ color: 'rgba(254,250,224,0.75)', fontSize: '1.0625rem', marginTop: '1rem', maxWidth: 560, margin: '1rem auto 0' }}>
@@ -28,7 +28,7 @@ export default function Sobre() {
         <section style={{ padding: '4rem 0', background: 'white' }}>
           <div className="container" style={{ maxWidth: 680 }}>
             <div className="card" style={{ padding: '2.5rem' }}>
-              <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1.25rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1.25rem' }}>
                 Nossa missão
               </h2>
               <p style={{ color: '#4b5563', lineHeight: 1.8, fontSize: '1.0625rem', marginBottom: '1.25rem' }}>

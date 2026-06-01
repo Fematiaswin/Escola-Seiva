@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header';
+﻿import { Header } from '@/components/Header';
 import { prisma } from '@/lib/prisma';
 import { notFound } from 'next/navigation';
 import { getServerSession } from 'next-auth';
@@ -74,7 +74,7 @@ export default async function CursoDetalhe({ params }: Props) {
                 </div>
 
                 <h1 style={{
-                  fontFamily: 'Georgia, serif', fontSize: 'clamp(1.75rem,4vw,2.5rem)',
+                  fontFamily: 'var(--font-display)', fontSize: 'clamp(1.75rem,4vw,2.5rem)',
                   fontWeight: 700, color: 'var(--seiva-cream)', marginBottom: '1rem', lineHeight: 1.2,
                 }}>
                   {course.title}
@@ -136,7 +136,7 @@ export default async function CursoDetalhe({ params }: Props) {
                 {/* Description */}
                 {course.description && course.shortDescription && (
                   <div style={{ marginBottom: '2.5rem' }}>
-                    <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1rem' }}>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1rem' }}>
                       Sobre o curso
                     </h2>
                     <p style={{ color: '#4b5563', lineHeight: 1.8, fontSize: '1rem' }}>{course.description}</p>
@@ -145,7 +145,7 @@ export default async function CursoDetalhe({ params }: Props) {
 
                 {/* Modules */}
                 <div>
-                  <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1.25rem' }}>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1.25rem' }}>
                     Conteúdo do curso
                   </h2>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

@@ -4,7 +4,7 @@ import { signIn } from 'next-auth/react';
 import { useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { BookOpen, Eye, EyeOff, LogIn, AlertCircle } from 'lucide-react';
+import { Eye, EyeOff, LogIn, AlertCircle } from 'lucide-react';
 
 export default function LoginPage() {
   const searchParams = useSearchParams();
@@ -46,12 +46,12 @@ export default function LoginPage() {
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div style={{
-            width: 56, height: 56, borderRadius: '50%', background: 'var(--seiva-cream)',
+            width: 64, height: 64,
             display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem',
           }}>
-            <BookOpen size={26} color="var(--seiva-dark)" />
+            <img className="brand-mark" src="/brand/seiva-mark-cream.png" alt="" />
           </div>
-          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '1.75rem', fontWeight: 700, color: 'var(--seiva-cream)' }}>
+          <h1 className="brand-wordmark" style={{ fontSize: '1.75rem', color: 'var(--seiva-cream)' }}>
             Escola Seiva
           </h1>
           <p style={{ color: 'rgba(254,250,224,0.65)', fontSize: '0.9375rem', marginTop: '0.375rem' }}>

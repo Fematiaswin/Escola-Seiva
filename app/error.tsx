@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect } from 'react';
 import Link from 'next/link';
@@ -19,7 +19,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
         }}>
           <AlertTriangle size={28} color="#dc2626" />
         </div>
-        <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.75rem' }}>
+        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.75rem' }}>
           Algo deu errado
         </h1>
         <p style={{ color: '#6b7280', marginBottom: '2rem', lineHeight: 1.7 }}>

@@ -87,7 +87,7 @@ export default async function Home() {
 
                 <h1
                   style={{
-                    fontFamily: 'Georgia, serif',
+                    fontFamily: 'var(--font-display)',
                     fontSize: 'clamp(2rem, 4vw, 3.25rem)',
                     fontWeight: 700,
                     color: 'var(--seiva-cream)',
@@ -182,7 +182,7 @@ export default async function Home() {
                   <p style={{ color: 'var(--seiva-medium)', fontWeight: 600, fontSize: '0.875rem', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
                     Formação
                   </p>
-                  <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 700, color: 'var(--seiva-dark)', lineHeight: 1.2 }}>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 700, color: 'var(--seiva-dark)', lineHeight: 1.2 }}>
                     Cursos disponíveis
                   </h2>
                 </div>
@@ -217,7 +217,7 @@ export default async function Home() {
 
                       {/* Content */}
                       <div style={{ padding: '1.25rem' }}>
-                        <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.125rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.5rem', lineHeight: 1.3 }}>
+                        <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.5rem', lineHeight: 1.3 }}>
                           {course.title}
                         </h3>
                         <p style={{ fontSize: '0.875rem', color: '#666', lineHeight: 1.6, marginBottom: '1rem' }}>
@@ -244,7 +244,7 @@ export default async function Home() {
         <section style={{ padding: '5rem 0', background: 'var(--seiva-cream)' }}>
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '1rem' }}>
                 Uma plataforma completa para seu crescimento
               </h2>
               <p style={{ color: '#666', fontSize: '1.0625rem', maxWidth: 520, margin: '0 auto' }}>
@@ -283,7 +283,7 @@ export default async function Home() {
           padding: '5rem 0', textAlign: 'center',
         }}>
           <div className="container">
-            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', fontWeight: 700, color: 'var(--seiva-cream)', marginBottom: '1rem' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', fontWeight: 700, color: 'var(--seiva-cream)', marginBottom: '1rem' }}>
               Pronto para começar?
             </h2>
             <p style={{ color: 'rgba(254,250,224,0.75)', fontSize: '1.0625rem', marginBottom: '2rem', maxWidth: 480, margin: '0 auto 2rem' }}>
@@ -308,10 +308,10 @@ export default async function Home() {
       }}>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-            <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'rgba(254,250,224,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <BookOpen size={14} color="var(--seiva-cream)" />
+            <div style={{ width: 30, height: 30, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img className="brand-mark" src="/brand/seiva-mark-cream.png" alt="" />
             </div>
-            <span style={{ fontFamily: 'Georgia, serif', fontWeight: 700, color: 'var(--seiva-cream)', fontSize: '1rem' }}>
+            <span className="brand-wordmark" style={{ color: 'var(--seiva-cream)', fontSize: '1rem' }}>
               Escola Seiva
             </span>
           </div>

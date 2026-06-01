@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import {
-  LayoutDashboard, BookOpen, Users, CreditCard, Settings, LogOut, ChevronRight, BookMarked
+  LayoutDashboard, BookOpen, Users, CreditCard, LogOut, ChevronRight
 } from 'lucide-react';
 
 const NAV = [
@@ -31,11 +31,11 @@ export default function AdminSidebar() {
       {/* Logo */}
       <div style={{ padding: '0 1.25rem 1.5rem', borderBottom: '1px solid rgba(254,250,224,0.10)' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none' }}>
-          <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'rgba(254,250,224,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <BookMarked size={16} color="var(--seiva-cream)" />
+          <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <img className="brand-mark" src="/brand/seiva-mark-cream.png" alt="" />
           </div>
           <div>
-            <div style={{ color: 'var(--seiva-cream)', fontFamily: 'Georgia, serif', fontWeight: 700, fontSize: '1rem', lineHeight: 1 }}>Escola Seiva</div>
+            <div className="brand-wordmark" style={{ color: 'var(--seiva-cream)', fontSize: '1rem', lineHeight: 1 }}>Escola Seiva</div>
             <div style={{ color: 'rgba(254,250,224,0.45)', fontSize: '0.6875rem', marginTop: '0.125rem' }}>Painel Admin</div>
           </div>
         </Link>

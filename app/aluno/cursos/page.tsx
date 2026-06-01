@@ -1,4 +1,4 @@
-import { getServerSession } from 'next-auth';
+﻿import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { redirect } from 'next/navigation';
@@ -215,7 +215,7 @@ export default async function MeusCursos({
               <div className="card" style={{ padding: '1.5rem', marginBottom: '1.25rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
                   <div>
-                    <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.5rem' }}>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.375rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.5rem' }}>
                       {activeLesson.title}
                     </h2>
                     {activeLesson.description && (

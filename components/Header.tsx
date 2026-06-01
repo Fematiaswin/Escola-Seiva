@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 import { useState } from 'react';
 import {
-  BookOpen, Menu, X, ChevronDown, LogOut, User, LayoutDashboard
+  Menu, X, ChevronDown, LogOut, User, LayoutDashboard
 } from 'lucide-react';
 
 export function Header() {
@@ -29,15 +29,13 @@ export function Header() {
           <div
             style={{
               width: 34, height: 34,
-              background: 'var(--seiva-medium)',
-              borderRadius: '50%',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
             }}
           >
-            <BookOpen size={18} color="var(--seiva-cream)" />
+            <img className="brand-mark" src="/brand/seiva-mark-green.png" alt="" />
           </div>
           <div>
-            <span style={{ fontFamily: 'Georgia, serif', fontWeight: 700, fontSize: '1.125rem', color: 'var(--seiva-dark)', lineHeight: 1 }}>
+            <span className="brand-wordmark" style={{ fontSize: '1.125rem', color: 'var(--seiva-dark)', lineHeight: 1 }}>
               Escola Seiva
             </span>
           </div>

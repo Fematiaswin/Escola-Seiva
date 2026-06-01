@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
@@ -140,7 +140,7 @@ export default function EditarCurso() {
           <ArrowLeft size={15} /> Voltar
         </Link>
         <div style={{ flex: 1 }}>
-          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)' }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)' }}>
             Editar curso
           </h1>
         </div>

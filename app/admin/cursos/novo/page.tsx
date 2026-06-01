@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -51,7 +51,7 @@ export default function NovoCurso() {
           <ArrowLeft size={15} /> Voltar
         </Link>
         <div>
-          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)' }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--seiva-dark)' }}>
             Novo curso
           </h1>
         </div>

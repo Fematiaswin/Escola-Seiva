@@ -1,4 +1,4 @@
-import { getServerSession } from 'next-auth';
+﻿import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { redirect } from 'next/navigation';
@@ -121,7 +121,7 @@ export default async function AdminDashboard() {
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
         <h1 style={{
-          fontFamily: 'Georgia, serif', fontSize: '1.75rem', fontWeight: 700,
+          fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 700,
           color: 'var(--seiva-dark)', marginBottom: '0.25rem',
         }}>
           Dashboard

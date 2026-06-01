@@ -1,4 +1,4 @@
-import { getServerSession } from 'next-auth';
+﻿import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { redirect } from 'next/navigation';
@@ -29,7 +29,7 @@ export default async function AdminCursos() {
     <div style={{ padding: '2rem 2.5rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '2rem' }}>
         <div>
-          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '1.75rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.25rem' }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 700, color: 'var(--seiva-dark)', marginBottom: '0.25rem' }}>
             Cursos
           </h1>
           <p style={{ color: '#6b7280', fontSize: '0.9375rem' }}>
