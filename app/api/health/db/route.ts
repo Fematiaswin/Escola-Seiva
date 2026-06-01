@@ -23,6 +23,10 @@ export async function GET() {
         ok: false,
         database: 'error',
         code: err?.code || 'UNKNOWN',
+        name: err?.name || 'UnknownError',
+        detail: typeof err?.message === 'string'
+          ? err.message.replace(process.env.DATABASE_URL || '', '[DATABASE_URL]').slice(0, 500)
+          : null,
         message:
           err?.code === 'P2021'
             ? 'Tabelas não encontradas. Rode o SQL do schema no Supabase.'
