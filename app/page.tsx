@@ -93,17 +93,17 @@ export default async function Home() {
                     color: 'var(--seiva-cream)',
                     lineHeight: 1.15,
                     marginBottom: '1.25rem',
-                    letterSpacing: '-0.02em',
+                    letterSpacing: 0,
+                    maxWidth: 640,
+                    textWrap: 'balance',
                   }}
                 >
-                  Conhecimento que cria<br />
-                  <span style={{ color: 'var(--seiva-light)' }}>raízes</span> e gera{' '}
-                  <span style={{ color: 'var(--seiva-light)' }}>crescimento.</span>
+                  Conhecimento que cria raízes e gera crescimento.
                 </h1>
 
                 <p style={{ color: 'rgba(254,250,224,0.78)', fontSize: '1.0625rem', lineHeight: 1.7, marginBottom: '2rem', maxWidth: 460 }}>
-                  A Escola Seiva é a plataforma de formação da Igreja Seiva, com cursos online,
-                  aulas via YouTube e Vimeo, e área exclusiva para alunos.
+                  A Escola Seiva é uma plataforma de formação cristã, com cursos online,
+                  para contribuir com a formação daqueles que desejam seguir a Cristo.
                 </p>
 
                 <div style={{ display: 'flex', gap: '0.875rem', flexWrap: 'wrap' }}>
@@ -133,8 +133,8 @@ export default async function Home() {
                   {[
                     { num: '01', text: 'Escolha um curso da plataforma' },
                     { num: '02', text: 'Faça o pagamento seguro pelo Asaas' },
-                    { num: '03', text: 'Acesso liberado automaticamente' },
-                    { num: '04', text: 'Assista às aulas na área exclusiva' },
+                    { num: '03', text: 'Acesso liberado' },
+                    { num: '04', text: 'Assista as aulas pela área exclusiva de alunos' },
                   ].map(step => (
                     <div key={step.num} style={{ display: 'flex', gap: '0.875rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
                       <span style={{
@@ -254,7 +254,7 @@ export default async function Home() {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.25rem' }}>
               {[
-                { icon: PlayCircle, title: 'Aulas em vídeo', desc: 'Conteúdo via YouTube e Vimeo, assistível a qualquer hora e dispositivo.' },
+                { icon: PlayCircle, title: 'Aulas em vídeo', desc: 'Conteúdo assistível a qualquer hora e dispositivo.' },
                 { icon: BookOpen, title: 'Materiais complementares', desc: 'Arquivos, PDFs e links de apoio organizados por aula.' },
                 { icon: Users, title: 'Área exclusiva', desc: 'Dashboard personalizado com progresso, histórico e próximas aulas.' },
                 { icon: Award, title: 'Certificados', desc: 'Certificado digital ao concluir cada curso. Comprovação permanente.' },
