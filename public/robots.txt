@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /aluno/
+Disallow: /api/
+Disallow: /login
+Disallow: /cadastro
+
+Sitemap: https://escola.igrejaseiva.com.br/sitemap.xml
